@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+*{
+    scroll-behavior: smooth;
+}
+button , a{
+    cursor: pointer;
+}
+.card:hover .icon{
+    transition: all;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+
+}
+
+@layer utilities{
+   .section-padding{
+    @apply md:px-14 px-10 py-12 
+   }
+   .chat-padding{
+    @apply md:px-[25%] px-16 py-2 
+   }
+   .button-navbar{
+    @apply rounded-lg px-2 py-2 transition-all duration-500 hover:bg-black/50 border-0 outline-0 hover:text-blue-500
+   }
+   .button-link{
+    @apply px-6 py-4 font-bold text-white rounded-xl text-lg max-sm:text-base
+   }
+   .card{
+    @apply flex flex-col px-6 py-8 gap-5 bg-[rgba(0,0,0,0.3)] border border-transparent rounded-2xl transition-all hover:-translate-y-3 cursor-pointer delay-300 duration-400 h-72
+   }
+   .statics-card{
+    @apply flex flex-col p-5 gap-3  bg-[rgba(0,0,0,0.3)] rounded-2xl transition-all hover:scale-125 cursor-pointer duration-400 text-center w-72 opacity-0
+   }
+
+
+}
