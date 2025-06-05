@@ -58,10 +58,13 @@ const Hero = () => {
           Start Coding Now
           <IoIosArrowRoundForward size={25} id="arrow" />
         </Link>
-        <button className="button-link flex gap-4 items-center bg-[rgba(0,0,0,0.3)] hover:bg-[rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-3 border border-gray-700 hover:border-transparent ">
+        <Link
+          to="https://github.com/3250-omar/Ai-Assistant.git"
+          className="button-link flex gap-4 items-center bg-[rgba(0,0,0,0.3)] hover:bg-[rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-3 border border-gray-700 hover:border-transparent "
+        >
           <FaGithub size={20} />
           View on GitHub
-        </button>
+        </Link>
       </div>
     </section>
   );
